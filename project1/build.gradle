@@ -28,7 +28,7 @@ dependencies {
     testImplementation 'org.springframework.security:spring-security-test'
     implementation 'org.hibernate:hibernate-core:5.5.7.Final'
     implementation 'javax.validation:validation-api:2.0.1.Final'
-    implementation 'mysql:mysql-connector-java:8.0.31'
+    implementation 'mysql:mysql-connector-java:8.0.32'
 }
 
 tasks.named('test') {
