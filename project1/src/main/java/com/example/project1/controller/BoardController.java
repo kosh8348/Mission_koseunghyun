@@ -1,6 +1,7 @@
-package com.example.project1.service;
+package com.example.project1.controller;
 
 import com.example.project1.entity.Board;
+import com.example.project1.service.BoardService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

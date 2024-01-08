@@ -2,9 +2,9 @@ package com.example.project1.service;
 
 import com.example.project1.entity.Board;
 import com.example.project1.repository.BoardRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 @Service
