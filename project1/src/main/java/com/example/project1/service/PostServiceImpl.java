@@ -26,7 +26,7 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public Post createPost(Post post) {
+    public Post createPost(Post post, Long boardId, String authorPassword) {
         return null;
     }
 
