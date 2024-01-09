@@ -20,14 +20,15 @@ public class BoardController {
         this.boardService = boardService;
     }
 
-    @GetMapping("/list")
+    @GetMapping("/list")  // 게시판 리스트
     public List<Board> getAllBoards() {
         return boardService.getAllBoards();
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Board> getBoardById(@PathVariable Long id) {
-        Board board = boardService.getBoardById(id);
+
+    @GetMapping("/{boardId}")   // 앤드포인트 (게시판 보기)
+    public ResponseEntity<Board> getBoard(@PathVariable Long boardId) {
+        Board board = boardService.getBoardById(boardId);
         return ResponseEntity.ok().body(board);
     }
 
