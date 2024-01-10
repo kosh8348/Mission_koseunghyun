@@ -20,10 +20,13 @@
 
 - `BoardController.java`: 게시판과 관련된 HTTP 요청을 처리하는 컨트롤러
 - `PostController.java`: 게시글과 관련된 HTTP 요청을 처리하는 컨트롤러
+- `CommentController.java`: 댓글과 관련된 HTTP 요청을 처리하는 컨트롤러
 - `Board.java`: 게시판 엔티티 클래스
 - `Post.java`: 게시글 엔티티 클래스
+- `comment.java`: 댓글 엔티티 클래스
 - `BoardRepository.java`: 게시판 데이터베이스 조작을 위한 리포지토리
 - `PostRepository.java`: 게시글 데이터베이스 조작을 위한 리포지토리
+- `CommentRepository.java`: 댓글 데이터베이스 조작을 위한 레포지토리
 
 ## 진행 중 발생한 어려움에 대한 기록
 
