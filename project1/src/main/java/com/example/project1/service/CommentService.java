@@ -1,16 +1,28 @@
 package com.example.project1.service;
 
 import com.example.project1.entity.Comment;
+import com.example.project1.entity.Post;
+import com.example.project1.repository.CommentRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
-public interface CommentService {
-    List<Comment> getAllComments();
+@Service
+public class CommentService {
+    private final CommentRepository commentRepository;
 
-    Comment getCommentById(Long id);
+    public CommentService(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
+    }
 
-    Comment createComment(Comment comment);
+    public List<Comment> getCommentsByPost(Post post) {
+        return commentRepository.findByPost(post);
+    }
 
-    Comment updateComment(Long id, Comment updatedComment);
+    public Comment addComment(Comment comment) {
+        return comment;
+    }
 
-    void deleteComment(Long id);
+    public void deleteComment(Long commentId) {
+    }
 }
