@@ -30,5 +30,4 @@
 
 ## 진행 중 발생한 어려움에 대한 기록
 
-현재 호환성 문제로 어플리케이션이 정상적으로 실행되지 않고 있습니다.
-이 문제를 해결하기 위해 [스트링 부트 버전 호환성 사이트](https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html#appendix.dependency-versions)와 구글링을 통해 찾아보는 중입니다.
+데이터베이스 연결 오류 발생으로 확인 중에있습니다.
