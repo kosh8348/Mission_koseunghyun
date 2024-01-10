@@ -18,4 +18,7 @@ public class Comment {
     private String content;
 
     private LocalDateTime createdAt;
+
+    public void setPost(Post post) {
+    }
 }
