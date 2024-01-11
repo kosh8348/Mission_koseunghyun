@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+</head>
+<body>
+<h1>Edit Post</h1>
+
+<!-- 게시글 수정 폼 -->
+<form method="post" th:action="@{/board/{boardId}/posts/{postId}/edit}">
+    <label for="postTitle">제목:</label>
+    <input type="text" id="postTitle" name="title" th:value="${post.title}">
+
+    <label for="postContent">내용:</label>
+    <textarea id="postContent" name="content" th:text="${post.content}"></textarea>
+
+    <label for="postPassword">비밀번호:</label>
+    <input type="password" id="postPassword" name="password">
+
+    <button type="submit">게시글 수정</button>
+</form>
+</body>
+</html>
