@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판 목록</title>
+</head>
+<body>
+<h1>게시판 목록</h1>
+<ul>
+    <li><a th:href="@{/board/free}">자유 게시판</a></li>
+    <li><a th:href="@{/board/development}">개발 게시판</a></li>
+    <li><a th:href="@{/board/daily}">일상 게시판</a></li>
+    <li><a th:href="@{/board/events}">사건사고 게시판</a></li>
+</ul>
+</body>
+</html>
