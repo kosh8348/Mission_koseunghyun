@@ -1,24 +1,32 @@
 package com.example.project1.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import javax.validation.constraints.NotNull;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
 public class Comment {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    @NotNull
+    private Long postId; // postId 필드 추가
     private String content;
+    private Date createdAt;
+    private String password;
 
-    private LocalDateTime createdAt;
+    public void setPostId(Long postId) {
+        this.postId = postId;
+    }
 
-    public void setPost(Post post) {
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
