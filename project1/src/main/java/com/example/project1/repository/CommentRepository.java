@@ -1,13 +1,10 @@
 package com.example.project1.repository;
 
 import com.example.project1.entity.Comment;
-import com.example.project1.entity.Post;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-@Repository
-public interface CommentRepository extends JpaRepository<Comment, Long> {
-    List<Comment> findByPost(Post post);
+public interface CommentRepository extends CrudRepository<Comment, Long> {
+    List<Comment> findByPostIdOrderByCreatedAtDesc(Long postId);
 }
