@@ -30,6 +30,7 @@
 - `BoardRepository.java`: 게시판 데이터베이스 조작을 위한 리포지토리
 - `PostRepository.java`: 게시글 데이터베이스 조작을 위한 리포지토리
 - `CommentRepository.java`: 댓글 데이터베이스 조작을 위한 레포지토리
+  
 
 ## 프로젝트 진행 중 느낀 어려웠던 점, 새로웠던 점
 
