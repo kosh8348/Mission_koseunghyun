@@ -14,7 +14,7 @@
 
 - Spring Boot
 - SQLite
-- Hibernate
+- Hibernate (Spring Data JPA)
 - Lombok
 - test
 
